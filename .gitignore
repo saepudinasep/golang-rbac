@@ -1,0 +1,71 @@
+# ===== Binary & Build Output =====
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin/
+/build/
+/dist/
+/tmp/
+
+# Hasil build umum (sesuaikan nama binary project kamu kalau perlu)
+golang-rbac
+main
+app
+cmd/main
+cmd/api/main
+
+# ===== Go specific =====
+# Vendor folder (uncomment kalau project kamu memang vendoring)
+# /vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Coverage
+*.cover
+coverage.txt
+coverage.out
+coverage.html
+
+# Debug
+__debug_bin*
+*.prof
+
+# ===== Environment / Secret =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets.yaml
+secrets.yml
+
+# ===== IDE / Editor =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ===== OS =====
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Air (live reload, kalau dipakai) =====
+tmp/
+.air.toml.bak
+
+# ===== Docker (kalau ada compose override lokal) =====
+docker-compose.override.yml
